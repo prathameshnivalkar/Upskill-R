@@ -20,7 +20,7 @@ const DashboardPage = ({ onNavigate, onCourseSelect, userData, coursesData }) =>
             </div>
           </div>
           <p className="text-gray-600 text-sm font-semibold mb-2">Enrolled Courses</p>
-          <p className="text-4xl font-bold text-gray-800">{userData.enrolledCourses}</p>npm
+          <p className="text-4xl font-bold text-gray-800">{userData.enrolledCourses}</p>
         </div>
         
         <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow">
