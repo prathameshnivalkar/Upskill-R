@@ -28,7 +28,7 @@ export default function LandingPage() {
         <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-full flex items-center justify-center shadow-md">
           <BookOpenText className="text-white" size={20} />
         </div>
-        <span className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent tracking-wide">
+        <span className="text-2xl font-bold bg-gradient-to-r from-blue-100 to-white bg-clip-text text-transparent tracking-wide">
           UpSkillR
         </span>
       </div>

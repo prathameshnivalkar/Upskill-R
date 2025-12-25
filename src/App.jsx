@@ -2,15 +2,14 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate, useParams } from 'react-router-dom';
 
 // NEW: Landing Page
-import LandingPage from './components/LandingPage';
-
-import Navbar from './components/Navbar';
-import DashboardPage from './components/DashboardPage';
-import BrowseCoursesPage from './components/BrowseCoursesPage';
-import CourseDetailPage from './components/CourseDetailPage';
-import LearningPage from './components/LearningPage';
-import ProgressTrackingPage from './components/ProgressTrackingPage';
-import ReviewModal from './components/ReviewModal';
+import LandingPage from './Learner/components/LandingPage';
+import Navbar from './Learner/components/Navbar';
+import DashboardPage from './Learner/components/DashboardPage';
+import BrowseCoursesPage from './Learner/components/BrowseCoursesPage';
+import CourseDetailPage from './Learner/components/CourseDetailPage';
+import LearningPage from './Learner/components/LearningPage';
+import ProgressTrackingPage from './Learner/components/ProgressTrackingPage';
+import ReviewModal from './Learner/components/ReviewModal';
 
 // Wrapper components for routes with course ID
 const CourseDetailWrapper = () => {
