@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate, useParams } from 'react-router-dom';
 
 // NEW: Landing Page
-import LandingPage from './Learner/components/LandingPage';
+import LandingPage from './LandingPage';
 import Navbar from './Learner/components/Navbar';
 import DashboardPage from './Learner/components/DashboardPage';
 import BrowseCoursesPage from './Learner/components/BrowseCoursesPage';
