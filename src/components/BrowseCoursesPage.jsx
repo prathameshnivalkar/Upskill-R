@@ -3,7 +3,6 @@ import { Search } from 'lucide-react';
 import CourseCard from './CourseCard';
 import ShinyText from '../ui/ShinyText';
 
-
 const BrowseCoursesPage = ({ onCourseSelect, onEnroll, coursesData }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -24,9 +23,8 @@ const BrowseCoursesPage = ({ onCourseSelect, onEnroll, coursesData }) => {
   return (
     <div className="relative min-h-screen overflow-hidden">
 
-    
-      {/* ===== DARK OVERLAY FOR READABILITY ===== */}
-      <div className="absolute inset-0 bg-black/70 z-10" />
+      {/* ===== DARK + BLUR OVERLAY ===== */}
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-xl z-10" />
 
       {/* ===== PAGE CONTENT ===== */}
       <div className="relative z-20 min-h-screen text-white space-y-12 px-6 py-12">
