@@ -1,4 +1,5 @@
 import React from "react";
+import { BookOpenText } from 'lucide-react';
 import { useNavigate } from "react-router-dom";
 
 export default function LandingPage() {
@@ -15,26 +16,57 @@ export default function LandingPage() {
     `,
     }}>
 
-      {/* ================= NAVBAR ================= */}
-      <nav className="flex items-center justify-between px-[5%] py-6 bg-white/10 backdrop-blur-md sticky top-0 z-50">
-        <div className="text-2xl font-bold text-white">🎓 UpSkillR</div>
+    {/* ================= NAVBAR ================= */}
+<nav className="sticky top-4 z-50 px-4">
+  <div className="max-w-7xl mx-auto bg-white/15 backdrop-blur-xl rounded-full shadow-2xl px-6 py-4 border border-white/20">
+    <div className="flex items-center justify-between">
 
-        <ul className="hidden md:flex gap-8 text-gray-200 font-medium">
-          <li className="hover:text-indigo-300 cursor-pointer">Home</li>
-          <li className="hover:text-indigo-300 cursor-pointer">Courses</li>
-          <li className="hover:text-indigo-300 cursor-pointer" onClick={() => navigate('/dashboard')}>Learner</li>
-          <li className="hover:text-indigo-300 cursor-pointer">Instructor</li>
-        </ul>
-
-        <div className="flex gap-4 items-center">
-          <button className="px-5 py-2 rounded-lg border border-white/40 hover:bg-white/10">
-            Login
-          </button>
-          <button className="px-5 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-700">
-            Sign Up
-          </button>
+      {/* 🔁 REPLACED LOGO (FROM OLD NAVBAR) */}
+      <div
+        className="flex items-center gap-3 cursor-pointer"
+        onClick={() => navigate('/dashboard')}
+      >
+        <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-full flex items-center justify-center shadow-md">
+          <BookOpenText className="text-white" size={20} />
         </div>
-      </nav>
+        <span className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent tracking-wide">
+          UpSkillr
+        </span>
+      </div>
+
+      {/* Desktop Menu */}
+      <ul className="hidden md:flex gap-8 text-gray-200 font-semibold">
+        <li className="hover:text-indigo-300 transition cursor-pointer">
+          Home
+        </li>
+        <li className="hover:text-indigo-300 transition cursor-pointer">
+          Courses
+        </li>
+        <li
+          className="hover:text-indigo-300 transition cursor-pointer"
+          onClick={() => navigate('/dashboard')}
+        >
+          Learner
+        </li>
+        <li className="hover:text-indigo-300 transition cursor-pointer">
+          Instructor
+        </li>
+      </ul>
+
+      {/* Actions */}
+      <div className="flex gap-3 items-center">
+        <button className="px-5 py-2 rounded-full border border-white/40 text-white font-semibold hover:bg-white/10 transition">
+          Login
+        </button>
+        <button className="px-6 py-2 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold hover:opacity-90 transition shadow-md">
+          Sign Up
+        </button>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
 
       {/* ================= HERO ================= */}
       <section className="text-center px-[5%] pt-28 pb-24">
