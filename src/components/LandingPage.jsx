@@ -21,10 +21,9 @@ export default function LandingPage() {
   <div className="max-w-7xl mx-auto bg-white/15 backdrop-blur-xl rounded-full shadow-2xl px-6 py-4 border border-white/20">
     <div className="flex items-center justify-between">
 
-      {/* 🔁 REPLACED LOGO (FROM OLD NAVBAR) */}
       <div
         className="flex items-center gap-3 cursor-pointer"
-        onClick={() => navigate('/dashboard')}
+        onClick={() => navigate('/')}
       >
         <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-full flex items-center justify-center shadow-md">
           <BookOpenText className="text-white" size={20} />

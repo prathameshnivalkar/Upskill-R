@@ -16,10 +16,10 @@ const Navbar = ({ currentPage }) => {
         
         <div className="flex justify-between items-center">
 
-          {/* Logo */}
+         {/* Logo */}
           <div
             className="flex items-center gap-3 cursor-pointer"
-            onClick={() => navigate('/dashboard')}
+            onClick={() => navigate('/')}   // 👈 Landing Page
           >
             <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-full flex items-center justify-center shadow-md">
               <BookOpenText className="text-white" size={20} />
@@ -28,6 +28,7 @@ const Navbar = ({ currentPage }) => {
               UpSkillR
             </span>
           </div>
+
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
