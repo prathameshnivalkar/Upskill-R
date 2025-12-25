@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Routes, Route, useNavigate, useParams } from '
 
 // NEW: Landing Page
 import LandingPage from './LandingPage';
-import Navbar from './Learner/components/Navbar';
-import DashboardPage from './Learner/components/DashboardPage';
-import BrowseCoursesPage from './Learner/components/BrowseCoursesPage';
-import CourseDetailPage from './Learner/components/CourseDetailPage';
-import LearningPage from './Learner/components/LearningPage';
-import ProgressTrackingPage from './Learner/components/ProgressTrackingPage';
-import ReviewModal from './Learner/components/ReviewModal';
+import Navbar from './Learner/Navbar';
+import DashboardPage from './Learner/DashboardPage';
+import BrowseCoursesPage from './Learner/BrowseCoursesPage';
+import CourseDetailPage from './Learner/CourseDetailPage';
+import LearningPage from './Learner/LearningPage';
+import ProgressTrackingPage from './Learner/ProgressTrackingPage';
+import ReviewModal from './Learner/ReviewModal';
 
 // Wrapper components for routes with course ID
 const CourseDetailWrapper = () => {

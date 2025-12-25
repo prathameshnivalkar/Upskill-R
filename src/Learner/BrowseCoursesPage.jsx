@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Search } from 'lucide-react';
 import CourseCard from './CourseCard';
-import ShinyText from '../../ui/ShinyText';
+import ShinyText from '../ui/ShinyText';
 
 const BrowseCoursesPage = ({ onCourseSelect, onEnroll, coursesData }) => {
   const [searchTerm, setSearchTerm] = useState('');
