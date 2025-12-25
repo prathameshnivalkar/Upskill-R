@@ -25,7 +25,7 @@ const Navbar = ({ currentPage }) => {
               <BookOpenText className="text-white" size={20} />
             </div>
             <span className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent tracking-wide">
-              UpSkillr
+              UpSkillR
             </span>
           </div>
 
